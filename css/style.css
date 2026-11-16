@@ -1,0 +1,22 @@
+:root { --parchment: #f4e4bc; --ink: #2c1b0e; --gold: #b8860b; --cover: #4a0e0e; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Georgia", "Times New Roman", serif; background: radial-gradient(ellipse at top, #1a1a2e, #0b0b12 70%); color: #eee; min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+header { text-align: center; padding: 1.2rem 1rem 0.5rem; }
+h1 { margin: 0; font-size: 2.4rem; color: var(--gold); text-shadow: 0 2px 8px #000; }
+.subtitle { margin: 0.3rem 0; color: #ddd; font-style: italic; }
+.hint { margin: 0.2rem 0 0.8rem; color: #aaa; font-size: 0.9rem; }
+#book-wrapper { display: flex; justify-content: center; align-items: center; padding: 10px; width: 100%; }
+.page { background: var(--parchment); color: var(--ink); padding: 26px 24px; overflow: hidden; border: 1px solid #c9b27c; box-shadow: inset 0 0 30px rgba(0,0,0,0.08); }
+.page.--hard { background: var(--cover); color: var(--gold); border: 2px solid #2a0505; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; box-shadow: inset 0 0 40px rgba(0,0,0,0.5); }
+.page h2 { font-size: 1.25rem; margin: 0 0 0.5rem; color: #5b2c0c; border-bottom: 1px solid #c9b27c; padding-bottom: 0.3rem; }
+.page h3 { font-size: 1.0rem; margin: 0.7rem 0 0.3rem; color: #4a250a; }
+.page p { font-size: 0.9rem; line-height: 1.45; margin: 0.32rem 0; text-align: justify; }
+.page .verse { margin: 0.22rem 0; }
+.page .vnum { font-weight: bold; color: #7a4a10; font-size: 0.78em; vertical-align: super; margin-right: 2px; }
+.page .center { text-align: center; }
+.page .small { font-size: 0.78rem; color: #5a4632; }
+.cover-title { font-size: 2rem; margin: 0.5rem 0; }
+.cover-sub { font-size: 1rem; color: #f0d88a; margin: 0.3rem 1rem; }
+.cover-emblem { font-size: 3rem; margin: 0.5rem 0; }
+footer { text-align: center; padding: 1rem; color: #888; font-size: 0.85rem; }
+footer a { color: #c9a84c; }
